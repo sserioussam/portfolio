@@ -151,6 +151,9 @@
     <Reference Include="Semver, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\semver.1.1.2\lib\net451\Semver.dll</HintPath>
     </Reference>
+    <Reference Include="SpectrumColourPicker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpectrumColourPicker.1.0.0.0\lib\net45\SpectrumColourPicker.dll</HintPath>
+    </Reference>
     <Reference Include="SQLCE4Umbraco, Version=1.0.6879.21988, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.Core.7.12.4\lib\net45\SQLCE4Umbraco.dll</HintPath>
     </Reference>
@@ -257,6 +260,28 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\da-DK.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\de-DE.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\en-GB.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\en-US.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\es-ES.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\fr-FR.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\he-IL.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\it-IT.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\ja-JP.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\nl-NL.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\pl-PL.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\pt-BR.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\ru-RU.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\sv-SE.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\tr-TR.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\zh-CN.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lang\zh-TW.xml" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lib\prevalue\preferredFormat.html" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lib\spectrum\spectrum.css" />
+    <Content Include="App_Plugins\SpectrumColorPicker\lib\spectrum\spectrum.js" />
+    <Content Include="App_Plugins\SpectrumColorPicker\SpectrumColorPicker.controller.js" />
+    <Content Include="App_Plugins\SpectrumColorPicker\SpectrumColorPicker.html" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -276,6 +301,7 @@
     <Content Include="config\Lang\ru-RU.user.xml" />
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
+    <Content Include="Content\application.css" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -288,7 +314,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
@@ -312,6 +340,7 @@
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
+    <Content Include="App_Plugins\SpectrumColorPicker\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -323,6 +352,28 @@
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Views\LandingNode.cshtml" />
+    <Content Include="Views\Projet.cshtml" />
+    <Content Include="Views\Website.cshtml" />
+    <Content Include="Views\_Master.cshtml" />
+    <Content Include="scss\0-base\_functions.scss" />
+    <Content Include="scss\0-base\_mixins.scss" />
+    <Content Include="scss\1-variables\_breakpoints.scss" />
+    <Content Include="scss\1-variables\_colors.scss" />
+    <Content Include="scss\1-variables\_sizes.scss" />
+    <Content Include="scss\1-variables\_typography.scss" />
+    <Content Include="scss\2-layout\_footer.scss" />
+    <Content Include="scss\2-layout\_general.scss" />
+    <Content Include="scss\2-layout\_header.scss" />
+    <Content Include="scss\3-typography\_general.scss" />
+    <Content Include="scss\3-typography\_icons.scss" />
+    <Content Include="scss\3-typography\_lists.scss" />
+    <Content Include="scss\3-typography\_titles.scss" />
+    <Content Include="scss\4-modules\_buttons.scss" />
+    <Content Include="scss\4-modules\_forms.scss" />
+    <Content Include="scss\4-modules\_menus.scss" />
+    <Content Include="scss\5-templates\_index.scss" />
+    <Content Include="scss\application.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -334,6 +385,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

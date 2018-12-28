@@ -1,0 +1,9 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "_Master.cshtml";
+    var siteid = UmbracoHelpers.GetSiteId(Request.Url.Host);
+    var brandNode = Umbraco.TypedContent(siteid);
+    var langNode = brandNode.Children.FirstOrDefault(x => x.Name.ToLower() == Umbraco.Field("#CurrentLanguage").ToString().ToLower());
+    var pageNode = Model.Content;
+}

@@ -120,3 +120,4 @@ C:\devroot\portfolio\portfolio\portfolio\obj\Debug\portfolio.csprojResolveAssemb
 C:\devroot\portfolio\portfolio\portfolio\obj\Debug\portfolio.csproj.CoreCompileInputs.cache
 C:\devroot\portfolio\portfolio\portfolio\obj\Debug\portfolio.dll
 C:\devroot\portfolio\portfolio\portfolio\obj\Debug\portfolio.pdb
+C:\devroot\portfolio\portfolio\portfolio\bin\SpectrumColourPicker.dll
